@@ -8,3 +8,22 @@ if (burgerMenu) {
         headerMain.classList.toggle('active');
     })
 }
+
+const videoPlay = document.querySelector('.showing__link');
+const videoMovie = document.querySelector('.showing__video');
+
+if (videoPlay) {
+    const showIng = document.querySelector('.showing');
+    videoPlay.addEventListener("click", function (e) {
+        showIng.classList.add('active');
+        videoMovie.play();
+        videoMovie.addEventListener("ended", function () {
+            videoMovie.load()
+            showIng.classList.remove('active');
+        })
+
+    })
+
+
+}
+
