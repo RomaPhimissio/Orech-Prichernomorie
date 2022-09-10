@@ -20,6 +20,7 @@
   overflow-x: hidden;
   min-height: 100%;
   display: grid;
+  grid-template-columns: 1fr;
 }
 a {
   text-decoration: none;
@@ -423,10 +424,9 @@ img {
     position: relative;
   }
   .header__nav {
-    transform: translate(0%, -100vh);
+    transform: translate(0%, -200vh);
     position: absolute;
     transition: all 0.5s ease 0s;
-    width: 100vw;
     left: 0;
   }
   .header__list {
@@ -978,6 +978,9 @@ img {
   justify-content: space-between;
   padding: 14px 5% 0;
   flex-wrap: wrap;
+  gap: 0.5em;
+  row-gap: 1em;
+  max-width: 410px;
 }
 .product__cost {
   display: flex;
@@ -985,6 +988,7 @@ img {
   -moz-column-gap: 0.5em;
        column-gap: 0.5em;
   max-width: 170px;
+  width: 100%;
 }
 .product__price {
   font-weight: 600;
