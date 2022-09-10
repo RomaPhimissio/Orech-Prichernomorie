@@ -420,6 +420,7 @@ img {
   }
   .header__nav-block-wrap {
     padding: 0;
+    position: relative;
   }
   .header__nav {
     transform: translate(0%, -100vh);
@@ -678,7 +679,8 @@ img {
   }
   .showing__title {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
+    line-height: 50px;
   }
 }
 .footer {
@@ -975,12 +977,14 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 14px 5% 0;
+  flex-wrap: wrap;
 }
 .product__cost {
   display: flex;
   align-items: baseline;
   -moz-column-gap: 0.5em;
        column-gap: 0.5em;
+  max-width: 170px;
 }
 .product__price {
   font-weight: 600;
