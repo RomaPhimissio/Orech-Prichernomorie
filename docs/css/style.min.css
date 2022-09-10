@@ -352,9 +352,6 @@ img {
   .header.active .header__nav-block {
     min-height: 293px;
   }
-  .header.active .header__nav {
-    transform: translate(0%, 0%);
-  }
   .header.active .header__burger::before {
     transform: translate(0, 4px) rotate(45deg);
   }
@@ -364,6 +361,11 @@ img {
   .header.active .header__burger-element {
     transform: scale(0);
     transition: all 0.5s ease 0s;
+  }
+  .header__nav-block {
+    height: 0;
+    overflow: hidden;
+    min-height: 0;
   }
   .header__burger::before,
   .header__burger::after {
@@ -424,8 +426,6 @@ img {
     position: relative;
   }
   .header__nav {
-    transform: translate(0%, -200vh);
-    position: absolute;
     transition: all 0.5s ease 0s;
     left: 0;
   }
