@@ -31,6 +31,29 @@
 	border: 1.5px solid rgba(51, 125, 90, 1);
 }
 
+.link-play {
+	display: flex;
+	border: 2px solid rgba(255, 255, 255, 1);
+	width: 61px;
+	height: 61px;
+	border-radius: 50%;
+	position: relative;
+	transition: all 1s ease 0s;
+}
+
+.link-play::after {
+	content: "";
+	position: absolute;
+	background: url("../../img/play.svg") no-repeat center;
+	width: 12px;
+	height: 17px;
+	left: 5px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
 a {
 	text-decoration: none;
 }
