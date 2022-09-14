@@ -44,6 +44,22 @@ if (videoPlayProd) {
     })
 }
 
+// VideoTask
+const videoPlayTask = document.querySelector('.task__link-play');
+const videoMovieTask = document.querySelector('.task__video');
+
+if (videoPlayTask) {
+    const task = document.querySelector('.task');
+    videoPlayTask.addEventListener("click", function (e) {
+        task.classList.add('active');
+        videoMovieTask.play();
+        videoMovieTask.addEventListener("ended", function () {
+            videoMovieTask.load()
+            task.classList.remove('active');
+        })
+    })
+}
+
 // Slider
 // const slider = document.querySelector('.producer__slider');
 // let count = 0;
