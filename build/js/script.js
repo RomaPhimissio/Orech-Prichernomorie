@@ -94,16 +94,3 @@ new Swiper('.news__list-container', {
     // ширина слайда
     slidesPerView: 'auto'
 })
-
-// Slider
-// const slider = document.querySelector('.producer__slider');
-// let count = 0;
-// let width;
-
-// function init() {
-//     console.log('resize');
-//     width = document.querySelector('.producer__slider-block').offsetWidth;
-//     console.log(width);
-// }
-
-// init()
