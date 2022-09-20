@@ -39,7 +39,7 @@
 .link-play::after {
   content: "";
   position: absolute;
-  background: url("../../img/play.svg") no-repeat center;
+  background: url("../img/play.svg") no-repeat center;
   width: 12px;
   height: 17px;
   left: 5px;
@@ -695,7 +695,7 @@ img {
   min-height: 600px;
   top: 0;
   z-index: 7;
-  background: url("../../img/video.webp") no-repeat center;
+  background: url("../img/video.webp") no-repeat center;
   background-size: cover;
 }
 @media (max-width: 1023px) {
@@ -999,7 +999,7 @@ img {
 .product__loop-wrap::after {
   content: "";
   position: absolute;
-  background: url("../../img/loop.svg") no-repeat center;
+  background: url("../img/loop.svg") no-repeat center;
   width: 19px;
   height: 19px;
   left: 0;
@@ -1024,14 +1024,14 @@ img {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url("../../img/left-arrow.svg") no-repeat center;
+  background: url("../img/left-arrow.svg") no-repeat center;
   background-size: 23px 23px;
   border: none;
   transform: translate(0, 386%);
   left: 10px;
 }
 .product__btn:nth-of-type(2) {
-  background: url("../../img/right-arrow.svg") no-repeat center;
+  background: url("../img/right-arrow.svg") no-repeat center;
   background-size: 23px 23px;
   right: 12px;
   left: auto;
@@ -1154,7 +1154,7 @@ img {
 }
 .product__info:first-child:after {
   content: "";
-  background: url("../../img/weight.svg") no-repeat center;
+  background: url("../img/weight.svg") no-repeat center;
   position: absolute;
   width: 18px;
   height: 18px;
@@ -1164,7 +1164,7 @@ img {
 .product__info:last-child::after {
   position: absolute;
   content: "";
-  background: url("../../img/package.svg") no-repeat center;
+  background: url("../img/package.svg") no-repeat center;
   width: 12px;
   height: 18px;
   left: -6px;
@@ -1359,11 +1359,11 @@ img {
   width: 50%;
   height: 100%;
   border: none;
-  background: #337d5a url("../../img/producer-left.svg") no-repeat center;
+  background: #337d5a url("../img/producer-left.svg") no-repeat center;
   background-size: 22px 20px;
 }
 .producer__btn:last-child {
-  background: #337d5a url("../../img/producer-right.svg") no-repeat center;
+  background: #337d5a url("../img/producer-right.svg") no-repeat center;
 }
 .producer__pic {
   position: relative;
@@ -1569,7 +1569,7 @@ img {
   min-height: 740px;
   top: 0;
   z-index: 7;
-  background: url("../../img/task-pic.webp") no-repeat center;
+  background: url("../img/task-pic.webp") no-repeat center;
   background-size: cover;
 }
 .task__video {
@@ -1690,7 +1690,7 @@ img {
   position: relative;
 }
 .benefit__item:nth-child(2) .benefit__subtitle::before {
-  background: url("../../img/benefit-icon2.svg") no-repeat center;
+  background: url("../img/benefit-icon2.svg") no-repeat center;
   width: 51px;
   height: 51px;
   top: -72px;
@@ -1699,7 +1699,7 @@ img {
   margin: 0 auto;
 }
 .benefit__item:nth-child(3) .benefit__subtitle::before {
-  background: url("../../img/benefit-icon3.svg") no-repeat center;
+  background: url("../img/benefit-icon3.svg") no-repeat center;
   width: 59px;
   height: 54px;
   top: -74px;
@@ -1710,7 +1710,7 @@ img {
 .benefit__subtitle::before {
   content: "";
   position: absolute;
-  background: url("../../img/benefit-icon1.svg") no-repeat center;
+  background: url("../img/benefit-icon1.svg") no-repeat center;
   width: 67px;
   height: 76px;
   top: -85px;
@@ -1776,7 +1776,7 @@ img {
 .eco__title::before {
   content: "";
   position: absolute;
-  background: url("../../img/eco-icon.png") no-repeat center;
+  background: url("../img/eco-icon.png") no-repeat center;
   width: 70px;
   height: 74px;
   left: 1px;
@@ -2085,12 +2085,12 @@ img {
   max-width: 113px;
 }
 .contacts__soc-item:nth-child(2) .contacts__soc-link::before {
-  background: url("../../img/telegram.svg") no-repeat center;
+  background: url("../img/telegram.svg") no-repeat center;
   width: 14px;
   height: 14px;
 }
 .contacts__soc-item:nth-child(3) .contacts__soc-link::before {
-  background: url("../../img/whatsapp.svg") no-repeat center;
+  background: url("../img/whatsapp.svg") no-repeat center;
   width: 15px;
   height: 15px;
 }
@@ -2105,7 +2105,7 @@ img {
 .contacts__soc-link::before {
   content: "";
   position: absolute;
-  background: url("../../img/viber.svg") no-repeat center;
+  background: url("../img/viber.svg") no-repeat center;
   width: 17px;
   height: 17px;
   left: 0;
