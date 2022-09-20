@@ -10,10 +10,13 @@
 
 .contacts__wrap {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 1em;
     justify-content: space-between;
-    padding: 7.3% 3.7% 5.35%;
+    padding: 7.2% 3.7% 5.35%;
+
+    @media (max-width: 867px) {
+        flex-wrap: wrap;
+    }
 }
 
 .contacts__content {
@@ -35,6 +38,7 @@
     padding-left: 33px;
     margin-bottom: 43px;
     position: relative;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1em;
     padding-right: 4px;
@@ -195,5 +199,18 @@
 @media (max-width: 1900px) {
     .contacts__brake {
         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts__map-block {
+        flex: 0 1 100%;
+        display: flex;
+        padding-right: 0;
+    }
+
+    .contacts__map {
+        flex: 1 1 auto;
+        height: 518px;
     }
 }

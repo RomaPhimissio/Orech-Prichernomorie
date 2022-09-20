@@ -33,7 +33,7 @@
     flex-wrap: wrap;
     gap: 1em;
     padding-right: 0.4%;
-    margin-bottom: 5%;
+    margin-bottom: 4.9%;
 }
 
 .news__title {
@@ -42,7 +42,7 @@
     font-size: 45px;
     line-height: 53px;
     letter-spacing: 0.01em;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
 }
 
 .news__text {
@@ -54,7 +54,7 @@
 }
 
 .news__btn-wrap-add {
-    padding-top: 30px;
+    padding-top: 31px;
 }
 
 .news__btn-wrap {
@@ -212,6 +212,7 @@
     right: 0;
     color: rgba(26, 47, 63, 1);
     font-size: 18px;
+    top: 1px;
 }
 
 .news__main-link-wrap {
@@ -241,4 +242,17 @@
 
 .news-link-color-mode {
     color: rgba(51, 125, 90, 1);
+}
+
+@media (max-width: 767px) {
+    .news__item {
+        // flex: 0 0 auto;
+    }
+
+    .news__list-container {
+        .swiper-wrapper {
+            width: 100vw;
+        }
+    }
+
 }
