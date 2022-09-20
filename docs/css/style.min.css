@@ -114,7 +114,7 @@ img {
 }
 .header__social-link {
   display: block;
-  background: url("../../img/facebook.svg") no-repeat center;
+  background: url("../img/facebook.svg") no-repeat center;
   width: 13px;
   height: 13px;
 }
@@ -125,7 +125,7 @@ img {
   padding-top: 14px;
 }
 .header__social-link:nth-child(3) {
-  background: url("../../img/youtube.svg") no-repeat center;
+  background: url("../img/youtube.svg") no-repeat center;
   width: 16px;
   height: 16px;
 }
@@ -187,7 +187,7 @@ img {
 .header__users-link-in::before {
   content: "";
   position: absolute;
-  background: url("../../img/user.svg") no-repeat center;
+  background: url("../img/user.svg") no-repeat center;
   width: 11px;
   height: 11px;
   left: 2px;
@@ -196,7 +196,7 @@ img {
 .header__users-link:nth-child(3)::before {
   content: "";
   position: absolute;
-  background: url("../../img/open-speak.svg") no-repeat center;
+  background: url("../img/open-speak.svg") no-repeat center;
   width: 8px;
   height: 6px;
   right: 0;
@@ -261,7 +261,7 @@ img {
   margin-right: 10px;
 }
 .header__item-soc-contacts:nth-child(1) .header__item-soc-contacts-link {
-  background: #337d5a url("../../img/viber.svg") no-repeat center;
+  background: #337d5a url("../img/viber.svg") no-repeat center;
   background-size: 17px 17px;
   display: block;
   width: 31px;
@@ -271,11 +271,11 @@ img {
   margin-right: 10px;
 }
 .header__item-soc-contacts:nth-child(2) .header__item-soc-contacts-link {
-  background: #337d5a url("../../img/telegram.svg") no-repeat center;
+  background: #337d5a url("../img/telegram.svg") no-repeat center;
   background-size: 14px 14px;
 }
 .header__item-soc-contacts:nth-child(3) .header__item-soc-contacts-link {
-  background: #337d5a url("../../img/whatsapp.svg") no-repeat center;
+  background: #337d5a url("../img/whatsapp.svg") no-repeat center;
   background-size: 15px 15px;
 }
 .header__block-tel {
@@ -335,7 +335,7 @@ img {
 }
 .header__bag-link {
   display: block;
-  background: url("../../img/bag.svg") no-repeat center;
+  background: url("../img/bag.svg") no-repeat center;
   width: 24px;
   height: 24px;
 }
@@ -577,7 +577,7 @@ img {
     align-items: center;
   }
   .header__users-link:nth-child(3)::before {
-    background: url("../../img/open-mob.svg") no-repeat center;
+    background: url("../img/open-mob.svg") no-repeat center;
     width: 10px;
     height: 8px;
     right: 4px;
@@ -591,7 +591,7 @@ img {
   .header__users-tel::before {
     content: "";
     position: absolute;
-    background: url("../../img/tel.svg") no-repeat center;
+    background: url("../img/tel.svg") no-repeat center;
     width: 10px;
     height: 10px;
     left: 0;
