@@ -60,6 +60,41 @@ if (videoPlayTask) {
     })
 }
 
+// VideoNews
+const videoPlayNews = document.querySelector('.news__link-play');
+const videoMovieNews = document.querySelector('.news__video');
+
+if (videoPlayNews) {
+    const news = document.querySelector('.news');
+    videoPlayNews.addEventListener("click", function (e) {
+        news.classList.add('active');
+        videoMovieNews.play();
+        videoMovieNews.addEventListener("ended", function () {
+            videoMovieNews.load()
+            news.classList.remove('active');
+        })
+    })
+}
+
+// Swiper
+// инициилизируем слайдер
+new Swiper('.news__list-container', {
+    navigation: {
+        nextEl: '.prod__btn-next',
+        prevEl: '.prod__btn-prev'
+    },
+
+    // клавиатура
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true
+    },
+
+    // ширина слайда
+    slidesPerView: 'auto'
+})
+
 // Slider
 // const slider = document.querySelector('.producer__slider');
 // let count = 0;

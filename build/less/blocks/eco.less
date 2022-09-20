@@ -1,0 +1,68 @@
+.eco {
+    width: 100%;
+    max-width: 100%;
+    background: url("../img/eco.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 740px;
+}
+
+.eco__container {}
+
+.eco__wrap {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.eco__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 740px;
+    padding: 4.3% 2% 0;
+}
+
+.eco__title {
+    font-family: "Raleway", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 53px;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    padding-right: 19px;
+    margin-bottom: 21px;
+}
+
+.eco__title::before {
+    content: "";
+    position: absolute;
+    background: url("../../img/eco-icon.png") no-repeat center;
+    width: 70px;
+    height: 74px;
+    left: 1px;
+    right: 0;
+    margin: 0 auto;
+    top: -120px;
+}
+
+.eco__text {
+    font-family: "Raleway", "Arial", "sans-serif";
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 1);
+    width: 38%;
+    padding-left: 8px;
+}
+
+@media (max-width: 767px) {
+    .eco__text {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .eco__title {
+        font-size: 35px;
+    }
+}
