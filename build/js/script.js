@@ -28,6 +28,24 @@ if (videoPlayShow) {
     })
 }
 
+// VideoShowingAbout
+const videoPlayShowAbout = document.querySelector('.showing-about__link-play');
+const videoMovieAbout = document.querySelector('.showing-about__video');
+
+
+if (videoPlayShowAbout) {
+    const showIngAbout = document.querySelector('.showing-about');
+    videoPlayShowAbout.addEventListener('click', function (e) {
+        showIngAbout.classList.add('active');
+        videoMovieAbout.play();
+        videoMovieAbout.addEventListener('ended', function () {
+            videoMovieAbout.load()
+            showIngAbout.classList.remove('active');
+        })
+
+    })
+}
+
 // VideoProducer
 const videoPlayProd = document.querySelector('.producer__link-play');
 const videoMovieProd = document.querySelector('.producer__video');
@@ -72,6 +90,38 @@ if (videoPlayNews) {
         videoMovieNews.addEventListener("ended", function () {
             videoMovieNews.load()
             news.classList.remove('active');
+        })
+    })
+}
+
+// VideoGallery
+const videoPlayGalmain = document.querySelector('.gallery__link-play-main');
+const videoMovieGalmain = document.querySelector('.gallery__video-main');
+
+if (videoPlayGalmain) {
+    const galMain = document.querySelector('.gallery__item-movie-main');
+    videoPlayGalmain.addEventListener("click", function (e) {
+        galMain.classList.add('active');
+        videoMovieGalmain.play();
+        videoMovieGalmain.addEventListener("ended", function () {
+            videoMovieGalmain.load()
+            galMain.classList.remove('active');
+        })
+    })
+}
+
+// VideoGallerySecond
+const videoPlayGal = document.querySelector('.gallery__link-play-second');
+const videoMovieGal = document.querySelector('.gallery__video-second');
+
+if (videoPlayGal) {
+    const gal = document.querySelector('.gallery__item-movie');
+    videoPlayGal.addEventListener("click", function (e) {
+        gal.classList.add('active');
+        videoMovieGal.play();
+        videoMovieGal.addEventListener("ended", function () {
+            videoMovieGal.load()
+            gal.classList.remove('active');
         })
     })
 }
