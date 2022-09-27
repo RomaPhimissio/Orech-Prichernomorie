@@ -1780,8 +1780,14 @@ img {
   background-size: cover;
   min-height: 740px;
 }
+.eco-about {
+  background: url("../img/eco-about.jpg") no-repeat center;
+}
 .eco__wrap {
   background: rgba(0, 0, 0, 0.45);
+}
+.eco__wrap-about {
+  background: rgba(0, 0, 0, 0.35);
 }
 .eco__content {
   display: flex;
@@ -1790,6 +1796,12 @@ img {
   justify-content: center;
   min-height: 740px;
   padding: 4.3% 2% 0;
+}
+.eco__content-about {
+  padding: 6.8% 2% 0;
+}
+.eco__content-about .eco__title::before {
+  top: -116px;
 }
 .eco__title {
   font-family: "Raleway", "Arial", "sans-serif";
@@ -1801,6 +1813,9 @@ img {
   position: relative;
   padding-right: 19px;
   margin-bottom: 21px;
+}
+.eco__title-about {
+  margin-bottom: 14px;
 }
 .eco__title::before {
   content: "";
@@ -1851,6 +1866,9 @@ img {
 }
 .news__wrap {
   padding: 6% 3.7% 6.4%;
+}
+.news-about__wrap {
+  padding: 6.2% 3.7% 6.4%;
 }
 .news__main-block {
   display: flex;
@@ -2301,6 +2319,66 @@ img {
 @media (max-width: 825px) {
   .showing-about__block-link {
     transform: translate(50%, 176%);
+  }
+}
+.showing-clients {
+  width: 100%;
+  max-width: 100%;
+  background: url("../img/show-clients.jpg") no-repeat center;
+  min-height: 600px;
+}
+.showing-clients__wrap {
+  position: relative;
+  background: rgba(0, 0, 0, 0.45);
+}
+.showing-clients__block-link {
+  position: absolute;
+  transform: translate(85%, 174%);
+}
+.showing-clients__link {
+  font-family: "Raleway", "Arial", "sans-serif";
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.44px;
+  letter-spacing: 0.02em;
+  margin-right: 26px;
+  position: relative;
+}
+.showing-clients__link:nth-child(1):after {
+  content: "\e900";
+  position: absolute;
+  font-family: icons;
+  right: -23px;
+  top: 2px;
+  font-size: 11px;
+}
+.showing-clients__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
+  padding-top: 86px;
+}
+@media (max-width: 999px) {
+  .showing-clients__block-link {
+    position: absolute;
+    transform: translate(20%, 174%);
+  }
+}
+@media (max-width: 520px) {
+  .showing-clients__block-link {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(3%, 174%);
+  }
+  .showing-clients__link {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 .feedback {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Орех Причерноморья</title>
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" href="css/fontsicon.css">
+  <link loading="lazy" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body class="page-body">
+  @@include('components/structure/header.html')
+  <main class="page-main">
+    <h1 class="visually-hidden">Орех Причерноморья</h1>
+    <section class="showing-clients">
+      <div class="showing-clients__container">
+        <div class="showing-clients__wrap">
+          <div class="showing-clients__block-link">
+            <a class="showing-clients__link" href="index.html">Главная</a>
+            <a class="showing-clients__link" href="about-company.html">Оптовым и корпоративным клиентам</a>
+          </div>
+          <div class="showing-clients__content">
+            @@include('components/base/showing-title-text.html')
+          </div>
+          <div class="showing-clients__block">
+          </div>
+        </div>
+      </div>
+    </section>
+    @@include('components/structure/stats.html')
+    @@include('./components/structure/eco.html', {
+    'class': 'eco-about',
+    'wrap': 'eco__wrap-about',
+    'contents': 'eco__content-about',
+    'title': 'eco__title-about'
+    })
+    @@include('components/structure/contacts.html')
+  </main>
+  @@include('components/structure/footer.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

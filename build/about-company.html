@@ -203,8 +203,15 @@
         </div>
       </div>
     </section>
-    @@include('components/structure/eco.html')
-    @@include('components/structure/news.html')
+    @@include('./components/structure/eco.html', {
+    'class': 'eco-about',
+    'wrap': 'eco__wrap-about',
+    'contents': 'eco__content-about',
+    'title': 'eco__title-about'
+    })
+    @@include('components/structure/news.html', {
+    'wrapper': 'news-about__wrap'
+    })
     @@include('components/structure/contacts.html')
   </main>
   @@include('components/structure/footer.html')
