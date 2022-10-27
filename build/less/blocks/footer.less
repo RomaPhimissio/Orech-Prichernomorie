@@ -10,6 +10,14 @@
     position: relative;
 }
 
+.footer__nav-news-main {
+    min-height: 123px;
+
+    .footer__nav-wrap {
+        padding: 3% 54px 0;
+    }
+}
+
 .footer__nav::before {
     content: "";
     position: absolute;
@@ -94,6 +102,11 @@
     letter-spacing: 0.01em;
     display: block;
     color: inherit;
+    transition: all 0.3s ease 0s;
+}
+
+.footer__item-link:hover {
+    color: rgba(51, 125, 90, 1);
 }
 
 .footer__item-link--mode {
@@ -119,6 +132,10 @@
     min-height: 83px;
     padding: 0 3.85% 0.6%;
     gap: 1em;
+}
+
+.footer__copy-wrap-news-main {
+    padding: 1% 3.85% 0.6%;
 }
 
 .footer__copy-developed {

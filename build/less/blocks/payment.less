@@ -1,0 +1,253 @@
+.payment-main {
+    width: 100%;
+    max-width: 100%;
+}
+
+.payment {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.payment:first-child {
+    padding-bottom: 18px;
+}
+
+.payment:first-child::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+}
+
+.payment__container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.payment__wrap-head {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    row-gap: 3em;
+    padding: 6.6% 12.5% 0 12.3%;
+}
+
+.payment__wrap {
+    padding: 3.8% 3.9% 3.5%;
+    display: flex;
+    gap: 1.5em;
+}
+
+.payment__par {
+    position: relative;
+    font-family: "Raleway", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    padding-left: 50px;
+    flex: 0 0 max-content;
+}
+
+.payment__par:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(51, 125, 90, 1);
+    width: 106%;
+    height: 3px;
+    bottom: -19px;
+    left: -6px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.payment__par:nth-child(2) {
+    padding-left: 86px;
+}
+
+.payment__par::before {
+    content: "";
+    position: absolute;
+    background: url("../img/wallet-pay.png") no-repeat center;
+    width: 37px;
+    height: 37px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.payment__par:nth-child(1)::before {
+    top: -4px;
+}
+
+.payment__par:nth-child(2)::before {
+    background: url("../img/lorry.png") no-repeat center;
+    width: 45px;
+    height: 45px;
+    left: 22px;
+    top: 5px;
+}
+
+.payment__par:nth-child(3)::before {
+    background: url("../img/box.png") no-repeat center;
+    width: 36px;
+    height: 36px;
+}
+
+.payment__content {
+    padding-top: 0.7%;
+    flex: 1 1 auto;
+}
+
+.payment__subtitle {
+    font-family: "Raleway", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 35px
+}
+
+.payment__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment__item {
+    margin-bottom: 50px;
+}
+
+.payment__item:nth-child(2) {
+    margin-bottom: 49px;
+}
+
+.payment__desc-list {
+    padding-left: 2px;
+    position: relative;
+}
+
+.payment__decor {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -13px;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background: rgba(147, 180, 116, 0.15);
+    border-radius: 50%;
+}
+
+.payment__decor-icon {
+    position: relative;
+    border-radius: 50%;
+    width: 36px;
+    background-color: rgba(51, 125, 90, 1);
+    height: 36px;
+}
+
+.payment__decor-icon::before {
+    content: "";
+    position: absolute;
+    background: url("../img/museum.png") no-repeat center;
+    width: 19px;
+    height: 19px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.payment__item:nth-child(2) {
+    .payment__decor-icon::before {
+        background: url("../img/bank-card.png") no-repeat center;
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.payment__item:nth-child(3) {
+    .payment__decor-icon::before {
+        background: url("../img/wallet.png") no-repeat center;
+        width: 18px;
+        height: 20px;
+    }
+}
+
+.payment__term {
+    font-family: "Raleway", "Arial", "sans-serif";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 58px;
+    margin-bottom: 21px;
+}
+
+.payment__desc {
+    font-family: "Raleway", "Arial", "sans-serif";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.payment__picture {
+    flex: 0 1 770px;
+    position: relative;
+    min-height: 100%;
+    max-height: 471px;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 967px) {
+    .payment__wrap {
+        padding: 3.8% 3.9% 3.5%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+
+    .payment__subtitle {
+        padding-left: 10%;
+    }
+
+    .payment__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 2em;
+    }
+
+    .payment__item {
+        padding-left: 10%;
+    }
+
+    .payment__picture {
+        flex: 1 1 770px;
+        margin: 0 auto;
+        padding-bottom: 61%;
+    }
+
+    .payment__par {
+        margin: 0 auto;
+    }
+
+    .payment__par:nth-child(2) {
+        padding-left: 50px;
+    }
+
+    .payment__par:nth-child(2)::before {
+        left: -5px;
+    }
+}

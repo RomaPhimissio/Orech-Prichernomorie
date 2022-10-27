@@ -1,0 +1,331 @@
+.clients-main {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.clients {
+    width: 100%;
+    max-width: 100%;
+}
+
+.clients:first-child {
+    margin-bottom: 5.9%;
+}
+
+.clients:nth-child(2) {
+    position: relative;
+    padding-bottom: 19px;
+}
+
+.clients:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+}
+
+.clients__container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.clients__wrap {}
+
+.clients__wrap-first {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 5.85% 3.9% 0;
+    gap: 0.45em;
+}
+
+.clients__title {
+    font-family: "Raleway", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 52.83px;
+    letter-spacing: 0.01em;
+}
+
+.clients__block-par {
+    display: grid;
+    padding-top: 1.4%;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3em;
+    column-gap: 3em;
+}
+
+.clients__desc {
+    font-size: 16px;
+    font-family: "Raleway", "Arial", "sans-serif";
+    line-height: 24px;
+}
+
+.clients__desc:first-child {
+    width: 90%;
+}
+
+.clients__desc:nth-child(2),
+.clients__desc:nth-child(4) {
+    padding-left: 31px;
+}
+
+.clients__desc:nth-child(3) {
+    padding-top: 5.2%;
+}
+
+.clients__desc:nth-child(4) {
+    transform: translate(0%, -4%);
+    width: 93%;
+}
+
+.clients__desc-mode {
+    font-weight: 700;
+}
+
+.clients__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0 1.3% 0 2.1%;
+    gap: 0.5em;
+    row-gap: 2.5em;
+    justify-content: end;
+}
+
+.clients__item {
+    position: relative;
+    padding-left: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clients__item:nth-child(2) {
+    .clients__item-par {
+        padding-left: 5px;
+    }
+}
+
+.clients__item:nth-child(4) {
+    justify-content: center;
+
+    .clients__item-par {
+        padding-left: 4px;
+    }
+}
+
+.clients__item--current::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(51, 125, 90, 1);
+    width: 205px;
+    height: 4px;
+    bottom: -19px;
+    left: 0;
+    right: 8px;
+    margin: 0 auto;
+}
+
+.clients__item-par {
+    width: 85%;
+    font-weight: 800;
+    font-family: "Raleway", "Arial", "sans-serif";
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+}
+
+.clients__item::before {
+    content: "";
+    position: absolute;
+    background: url("../img/clients-ic1.png") no-repeat center;
+    width: 37px;
+    height: 37px;
+    left: 28px;
+    top: 3px;
+}
+
+.clients__item:nth-child(2)::before {
+    background: url("../img/clients-ic2.png") no-repeat center;
+    width: 37px;
+    height: 37px;
+    left: 34px;
+}
+
+.clients__item:nth-child(3)::before {
+    background: url("../img/clients-ic3.png") no-repeat center;
+    width: 49px;
+    height: 49px;
+    left: 15px;
+    top: -7px;
+}
+
+.clients__item:nth-child(4)::before {
+    background: url("../img/clients-ic4.png") no-repeat center;
+    width: 45px;
+    height: 45px;
+    left: 5px;
+    top: -1px;
+}
+
+.clients__item:nth-child(5)::before {
+    background: url("../img/clients-ic5.png") no-repeat center;
+    width: 43px;
+    height: 43px;
+    left: 19px;
+    top: 0;
+}
+
+.clients__wrap-third {
+    display: flex;
+    padding: 1.45% 3.9% 6.5%;
+    gap: 2em;
+}
+
+.clients__content {
+    flex: 1 1 auto;
+    padding-top: 48px;
+}
+
+.clients__text {
+    font-size: 16px;
+    font-family: "Raleway", "Arial", "sans-serif";
+    line-height: 24px;
+    margin-bottom: 24px;
+    width: 95%;
+}
+
+.clients__text:nth-child(3) {
+    width: 88%;
+}
+
+.clients__text:nth-child(4) {
+    width: 84%;
+    margin-bottom: 40px;
+}
+
+.clients__link {
+    font-family: "Raleway", "Arial", "sans-serif";
+    width: 188px;
+    height: 52px;
+    background-color: rgba(51, 125, 90, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.clients__picture {
+    flex: 0 0 761px;
+    position: relative;
+    padding-bottom: 36.45%;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0, -5%) scale(1.1);
+    }
+}
+
+@media (max-width: 1230px) {
+    .clients__wrap-first {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5.85% 3.9% 0;
+        gap: 0.45em;
+    }
+
+    .clients__wrap-third {
+        flex-wrap: wrap;
+    }
+
+    .clients__picture {
+        margin: 0 auto;
+        flex: 1 1 761px;
+
+        img {
+            top: 0;
+            left: 0;
+            transform: translate(0, 0) scale(1);
+        }
+    }
+
+    .clients__item-par {
+        width: 100%;
+    }
+
+    .clients__list {
+        gap: 1em;
+        row-gap: 3em;
+    }
+
+    .clients__item:nth-child(1)::before,
+    .clients__item:nth-child(2)::before,
+    .clients__item:nth-child(3)::before,
+    .clients__item:nth-child(4)::before,
+    .clients__item:nth-child(5)::before {
+        left: -5px;
+    }
+
+    .clients__block-par {
+        gap: 1.5em;
+        column-gap: 1em;
+    }
+
+    .clients__desc:first-child {
+        width: 100%;
+    }
+
+    .clients__desc:nth-child(3) {
+        padding-top: 0;
+    }
+
+    .clients__desc:nth-child(4) {
+        transform: translate(0%, 0%);
+        width: 100%;
+    }
+
+    .clients__item--current::after {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .clients__block-par {
+        grid-template-columns: 1fr;
+    }
+
+    .clients__desc:nth-child(2),
+    .clients__desc:nth-child(4) {
+        padding: 0;
+    }
+
+    .clients__list {
+        grid-template-columns: 1fr;
+        padding-left: 10%;
+    }
+
+    .clients__item {
+        width: max-content;
+    }
+
+    .clients__title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}

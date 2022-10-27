@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="footer__nav">
+  <div class="footer__nav  @@if (context.nav) {@@nav}">
     <div class="footer__nav-container">
       <div class="footer__nav-wrap">
         <div class="footer__logo">
@@ -12,18 +12,18 @@
             <li class="footer__item footer__item--current"><a class="footer__item-link" href="#">Магазин</a></li>
             <li class="footer__item"><a class="footer__item-link footer__item-link--mode" href="#">Корпоративным
                 клиентам</a></li>
-            <li class="footer__item"><a class="footer__item-link" href="#">Оплата и доставка</a></li>
-            <li class="footer__item"><a class="footer__item-link" href="#">О производстве</a></li>
-            <li class="footer__item"><a class="footer__item-link" href="#">Новости и статьи</a></li>
-            <li class="footer__item"><a class="footer__item-link" href="#">Галерея</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="payment.html">Оплата и доставка</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="about-company.html">О производстве</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="news-main.html">Новости и статьи</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="gallery.html">Галерея</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
-  <div class="footer__copy">
+  <div class="footer__copy @@if (context.copy) {@@copy}">
     <div class="footer__copy-container">
-      <div class="footer__copy-wrap">
+      <div class="footer__copy-wrap @@if (context.wrapper) {@@wrapper}">
         <p class="footer__copy-developed">Разработано <span class="footer__copy-element">AVADA MEDIA</span></p>
         <p class="footer__copyright">Copyright © 2019. Все права защищены</p>
         <div class="footer__info-social-block">

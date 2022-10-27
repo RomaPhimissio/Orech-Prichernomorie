@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Орех Причерноморья</title>
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" href="css/fontsicon.css">
+</head>
+
+<body class="page-body">
+  @@include('components/structure/header.html')
+  <main class="page-main">
+    <h1 class="visually-hidden">Орех Причерноморья</h1>
+    <section class="pay">
+      <div class="pay__inner-wrap">
+        <div class="pay__container">
+          <div class="pay__wrap">
+            <div class="pay__block-link">
+              <a href="index.html" class="pay__link">Главная
+              </a>
+              <a href="#" class="pay__link">Оплата и доставка
+              </a>
+            </div>
+            <h2 class="pay__title">Оплата и доставка</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="payment-main">
+      <div class="payment">
+        <div class="payment__container">
+          <div class="payment__wrap-head">
+            <p class="payment__par">Оплата заказа</p>
+            <p class="payment__par">Доставка партии</p>
+            <p class="payment__par">Возврат товара</p>
+          </div>
+        </div>
+      </div>
+      <div class="payment">
+        <div class="payment__container">
+          <div class="payment__wrap">
+            <div class="payment__content">
+              <h3 class="payment__subtitle">Способы оплаты</h3>
+              <ul class="payment__list">
+                <li class="payment__item">
+                  <dl class="payment__desc-list">
+                    <div class="payment__decor">
+                      <div class="payment__decor-icon"></div>
+                    </div>
+                    <dt class="payment__term">Безналичный расчет</dt>
+                    <dd class="payment__desc">Вы можете выбрать “получить реквизиты” <br>
+                      для дальнейшей оплаты на карту, или в терминалах.</dd>
+                  </dl>
+                </li>
+                <li class="payment__item">
+                  <dl class="payment__desc-list">
+                    <div class="payment__decor">
+                      <div class="payment__decor-icon"></div>
+                    </div>
+                    <dt class="payment__term">Оплата с помощью банковской карты</dt>
+                    <dd class="payment__desc">Оплатите Ваш заказ картой любого банка онлайн <br>
+                      (LiqPay/Приват24)</dd>
+                  </dl>
+                </li>
+                <li class="payment__item">
+                  <dl class="payment__desc-list">
+                    <div class="payment__decor">
+                      <div class="payment__decor-icon"></div>
+                    </div>
+                    <dt class="payment__term">Наличный расчет</dt>
+                    <dd class="payment__desc">Оплата заказов наложенным платежом в отделении <br>
+                      Новой Почты, или наличными курьерами</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="payment__picture">
+              <picture>
+                <img src="img/payment.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    @@include('components/structure/stats.html', {
+    'section': 'stats-client',
+    'classclient': 'stats__wrap-client'
+    })
+    @@include('components/structure/task.html')
+    @@include('components/structure/contacts.html')
+  </main>
+  @@include('components/structure/footer.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

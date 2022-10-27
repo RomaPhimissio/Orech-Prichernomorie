@@ -1,8 +1,9 @@
-<section class="eco @@if (context.class) {@@class}">
+<section class="eco @@if (context.class) {@@class} @@if (context.classclients) {@@classclients}">
   <div class="eco__container">
-    <div class="eco__wrap @@if (context.wrap) {@@wrap}">
-      <div class="eco__content @@if (context.contents) {@@contents}">
-        <h2 class="eco__title @@if (context.title) {@@title}">Эко продукция</h2>
+    <div class="eco__wrap @@if (context.wrap) {@@wrap} @@if (context.wrapclients) {@@wrapclients}">
+      <div class="eco__content @@if (context.contents) {@@contents} @@if (context.contentsclients) {@@contentsclients}">
+        <h2 class="eco__title @@if (context.title) {@@title} @@if (context.titleclients) {@@titleclients}">Эко продукция
+        </h2>
         <p class="eco__text">Выращиваем каждое деревцо с любовью, на экологически
           чистой земле, без использования пестицидов и химии</p>
       </div>

@@ -58,32 +58,34 @@
           </div>
           <div class="producer__slider-block">
             <div class="producer__btn-wrap">
-              <button class="producer__btn"></button>
-              <button class="producer__btn"></button>
+              <button class="producer__btn swiper__btn-prev"></button>
+              <button class="producer__btn swiper__btn-next"></button>
             </div>
-            <div class="producer__slider">
-              <div class="producer__slide">
-                <div class="producer__pic">
-                  <picture>
-                    <img src="../img/producer-pic.webp" alt="">
-                  </picture>
+            <div class="producer__slider swiper-container">
+              <div class="producer__slider-wrap swiper-wrapper">
+                <div class="producer__slide swiper-slide">
+                  <div class="producer__pic">
+                    <picture>
+                      <img src="../img/producer-pic.webp" alt="">
+                    </picture>
+                  </div>
+                  <video class="producer__video" src="../img/squirrel.mp4">
+                  </video>
+                  <div class="producer__link-play-wrap">
+                    <a class="producer__link-play link-play" href="#" onclick="return false"></a>
+                  </div>
                 </div>
-                <video class="producer__video" src="../img/squirrel.mp4">
-                </video>
-                <div class="producer__link-play-wrap">
-                  <a class="producer__link-play link-play" href="#" onclick="return false"></a>
-                </div>
-              </div>
-              <div class="producer__slide">
-                <div class="producer__pic">
-                  <picture>
-                    <img src="../../img/producer-pic.webp" alt="">
-                  </picture>
-                </div>
-                <video class="producer__video" src="../../img/squirrel.mp4">
-                </video>
-                <div class="producer__link-play-wrap">
-                  <a class="link-play" href="#" onclick="return false"></a>
+                <div class="producer__slide swiper-slide">
+                  <div class="producer__pic">
+                    <picture>
+                      <img src="../../img/producer-pic.webp" alt="">
+                    </picture>
+                  </div>
+                  <video class="producer__video" src="../../img/squirrel.mp4">
+                  </video>
+                  <div class="producer__link-play-wrap">
+                    <a class="link-play" href="#" onclick="return false"></a>
+                  </div>
                 </div>
               </div>
             </div>

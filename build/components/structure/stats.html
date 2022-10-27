@@ -1,6 +1,6 @@
-<section class="stats">
+<section class="stats @@if (context.section) {@@section}">
   <div class="stats__container">
-    <div class="stats__wrap @@if (context.class) {@@class}">
+    <div class="stats__wrap @@if (context.class) {@@class} @@if (context.classclient) {@@classclient}">
       <ul class="stats__list">
         <li class="stats__item">
           <p class="stats__main">240<sup class="stats__mean">Га</sup></p>
