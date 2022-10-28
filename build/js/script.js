@@ -1,4 +1,4 @@
-// BurgerMenu
+// ! BurgerMenu
 const burgerMenu = document.querySelector('.header__burger-wrap');
 if (burgerMenu) {
     const headerNav = document.querySelector('.header__nav');
@@ -10,7 +10,7 @@ if (burgerMenu) {
     })
 }
 
-// VideoShowing
+// ! VideoShowing
 const videoPlayShow = document.querySelector('.showing__link-play');
 const videoMovie = document.querySelector('.showing__video');
 
@@ -28,7 +28,7 @@ if (videoPlayShow) {
     })
 }
 
-// VideoShowingAbout
+// ! VideoShowingAbout
 const videoPlayShowAbout = document.querySelector('.showing-about__link-play');
 const videoMovieAbout = document.querySelector('.showing-about__video');
 
@@ -46,7 +46,7 @@ if (videoPlayShowAbout) {
     })
 }
 
-// VideoProducer
+// ! VideoProducer
 const videoPlayProd = document.querySelector('.producer__link-play');
 const videoMovieProd = document.querySelector('.producer__video');
 
@@ -62,7 +62,7 @@ if (videoPlayProd) {
     })
 }
 
-// VideoTask
+// ! VideoTask
 const videoPlayTask = document.querySelector('.task__link-play');
 const videoMovieTask = document.querySelector('.task__video');
 
@@ -78,7 +78,7 @@ if (videoPlayTask) {
     })
 }
 
-// VideoNews
+// ! VideoNews
 const videoPlayNews = document.querySelector('.news__link-play');
 const videoMovieNews = document.querySelector('.news__video');
 
@@ -94,7 +94,23 @@ if (videoPlayNews) {
     })
 }
 
-// VideoGallery
+// ! VideoNewsSecond
+const videoPlayNewsMain = document.querySelector('.news__link-play');
+const videoMovieNewsMain = document.querySelector('.news__video');
+
+if (videoPlayNews) {
+    const newsMain = document.querySelector('.news-main');
+    videoPlayNews.addEventListener("click", function (e) {
+        newsMain.classList.add('active');
+        videoMovieNews.play();
+        videoMovieNews.addEventListener("ended", function () {
+            videoMovieNews.load()
+            newsMain.classList.remove('active');
+        })
+    })
+}
+
+// ! VideoGallery
 const videoPlayGalmain = document.querySelector('.gallery__link-play-main');
 const videoMovieGalmain = document.querySelector('.gallery__video-main');
 
@@ -110,7 +126,7 @@ if (videoPlayGalmain) {
     })
 }
 
-// VideoGallerySecond
+// ! VideoGallerySecond
 const videoPlayGal = document.querySelector('.gallery__link-play-second');
 const videoMovieGal = document.querySelector('.gallery__video-second');
 
@@ -126,7 +142,7 @@ if (videoPlayGal) {
     })
 }
 
-// Swiper
+// ! Swiper
 // инициилизируем слайдер
 new Swiper('.news__list-container', {
     navigation: {

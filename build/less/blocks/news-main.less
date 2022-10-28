@@ -3,6 +3,20 @@
     max-width: 100%;
 }
 
+.news-main.active {
+    .news__item:nth-child(2) {
+        img {
+            opacity: 0;
+            transition: all 0.3s ease 0s;
+        }
+
+        .link-play {
+            opacity: 0;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+
 .news-main__container {
     margin: 0 auto;
     max-width: 1400px;
@@ -139,7 +153,6 @@
     right: 0;
 }
 
-.news-main__main-link-wrap {}
 
 .news-main__main-link {
     font-family: "Raleway", "Arial", "sans-serif";
