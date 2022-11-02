@@ -23,7 +23,7 @@ if (videoPlayShow) {
     const showIng = document.querySelector('.showing');
     videoPlayShow.addEventListener('click', function (e) {
         showIng.classList.add('active');
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 1400) {
             if (document.fullscreenEnabled) {
                 videoMovievideoMovie.requestFullscreen();
                 // qs(".video-block__video iframe").classList.remove("first-view");
