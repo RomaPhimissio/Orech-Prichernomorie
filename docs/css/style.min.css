@@ -653,10 +653,14 @@ img {
 }
 .showing.active .showing__block {
   opacity: 0;
+  z-index: 0;
   transition: all 0.5s ease 0s;
 }
 .showing.active .link-play {
   opacity: 0;
+}
+.showing.active .showing__content {
+  z-index: 0;
 }
 .showing__content {
   background: rgba(0, 0, 0, 0.45);

@@ -10,6 +10,10 @@ if (burgerMenu) {
     })
 }
 
+// ! globalVideo
+
+let srcGlobalVideo = "https://www.youtube.com/embed/_HyXo1CjmXk";
+
 // ! VideoShowing
 const videoPlayShow = document.querySelector('.showing__link-play');
 const videoMovie = document.querySelector('.showing__video');
@@ -19,12 +23,7 @@ if (videoPlayShow) {
     const showIng = document.querySelector('.showing');
     videoPlayShow.addEventListener('click', function (e) {
         showIng.classList.add('active');
-        videoMovie.play();
-        videoMovie.addEventListener('ended', function () {
-            videoMovie.load()
-            showIng.classList.remove('active');
-        })
-
+        videoMovie.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
 

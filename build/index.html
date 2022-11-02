@@ -14,16 +14,6 @@
   @@include('components/structure/header.html')
   <main class="page-main">
     <h1 class="visually-hidden">Орех Причерноморья</h1>
-    <div class="video-frame">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/_HyXo1CjmXk" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-
-    <video width="500" controls>
-      <source src="img/sample.webm" type="video/webm">
-      <source src="img/sample.mp4" type="video/mp4">
-    </video>
     <section class="showing">
       <div class="showing__container">
         <div class="showing__wrap">
@@ -33,10 +23,10 @@
           </div>
           <div class="showing__block">
           </div>
-          <video class="showing__video">
-            <source src="img/sample.webm" type="video/webm">
-            <source src="img/sample.mp4" type="video/mp4">
-          </video>
+          <iframe class="showing__video" width="560" height="315" src="https://www.youtube.com/embed/_HyXo1CjmXk"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
       </div>
     </section>
