@@ -25,7 +25,7 @@ if (videoPlayShow) {
         showIng.classList.add('active');
         if (window.innerWidth < 768) {
             if (document.fullscreenEnabled) {
-                qs(".video-block__video iframe").requestFullscreen();
+                videoMovievideoMovie.requestFullscreen();
                 // qs(".video-block__video iframe").classList.remove("first-view");
             }
         }
