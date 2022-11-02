@@ -26,9 +26,9 @@ if (videoPlayShow) {
         if (window.innerWidth < 1400) {
             if (document.fullscreenEnabled) {
                 videoMovievideoMovie.requestFullscreen();
-                // qs(".video-block__video iframe").classList.remove("first-view");
             }
         }
+        e.preventDefault();
         videoMovie.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
