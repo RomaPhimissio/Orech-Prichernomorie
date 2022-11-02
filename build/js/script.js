@@ -26,11 +26,9 @@ if (videoPlayShow) {
         showIng.classList.add('active');
         if (window.innerWidth < 1400) {
             if (document.fullscreenEnabled) {
-                videoMovievideoMovie.requestFullscreen();
+                videoMovie.requestFullscreen();
             }
         }
-        e.preventDefault();
-        videoBlock.style.display = "none";
         videoMovie.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }

@@ -651,11 +651,15 @@ img {
      object-fit: cover;
   z-index: 1;
 }
+.showing.active .showing__block {
+  display: none;
+  transition: all 0.5s ease 0s;
+}
 .showing.active .link-play {
-  opacity: 0;
+  display: none;
 }
 .showing.active .showing__content {
-  z-index: 0;
+  display: none;
 }
 .showing__content {
   background: rgba(0, 0, 0, 0.45);
