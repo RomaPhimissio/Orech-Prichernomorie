@@ -22,19 +22,14 @@
 
 .showing.active {
     .showing__block {
-        // opacity: 0;
-        // z-index: 0;
         display: none;
-        transition: all 0.5s ease 0s;
     }
 
     .link-play {
-        // opacity: 0;
         display: none;
     }
 
     .showing__content {
-        // z-index: 0;
         display: none;
     }
 }
@@ -83,6 +78,7 @@
     z-index: 7;
     background: url("../img/video.webp") no-repeat center;
     background-size: cover;
+    transition: all 0.5s ease 0s;
 }
 
 @media (max-width: 1023px) {
