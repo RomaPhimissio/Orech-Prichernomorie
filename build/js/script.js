@@ -23,6 +23,12 @@ if (videoPlayShow) {
     const showIng = document.querySelector('.showing');
     videoPlayShow.addEventListener('click', function (e) {
         showIng.classList.add('active');
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                qs(".video-block__video iframe").requestFullscreen();
+                // qs(".video-block__video iframe").classList.remove("first-view");
+            }
+        }
         videoMovie.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
