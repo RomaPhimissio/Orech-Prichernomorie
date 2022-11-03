@@ -47,12 +47,13 @@ if (videoPlayShowAbout) {
     })
 }
 
-// ! VideoProducer
-const videoPlayProd = document.querySelector('.producer__link-play');
-const videoMovieProd = document.querySelector('.producer__video');
+// ! VideoProducer 1
+const videoPlayProd = document.querySelector('.producer__link-play1');
+const videoMovieProd = document.querySelector('.producer__video-js1');
+const videoBtnWrap = document.querySelector('.producer__btn-wrap');
 
 if (videoPlayProd) {
-    const produCe = document.querySelector('.producer');
+    const produCe = document.querySelector('.producer__slide-js1');
     videoPlayProd.addEventListener("click", function (e) {
         produCe.classList.add('active');
         if (window.innerWidth < 768) {
@@ -60,7 +61,26 @@ if (videoPlayProd) {
                 videoMovieProd.requestFullscreen();
             }
         }
+        videoBtnWrap.style.display = "none";
         videoMovieProd.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
+    })
+}
+
+// ! VideoProducer 2
+const videoPlayProd2 = document.querySelector('.producer__link-play2');
+const videoMovieProd2 = document.querySelector('.producer__video-js2');
+
+if (videoPlayProd2) {
+    const produCe2 = document.querySelector('.producer__slide-js2');
+    videoPlayProd2.addEventListener("click", function (e) {
+        produCe2.classList.add('active');
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                videoMovieProd2.requestFullscreen();
+            }
+        }
+        videoBtnWrap.style.display = "none";
+        videoMovieProd2.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
 
@@ -150,6 +170,25 @@ new Swiper('.news__list-container', {
     navigation: {
         nextEl: '.prod__btn-next',
         prevEl: '.prod__btn-prev'
+    },
+
+    // клавиатура
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true
+    },
+
+    // ширина слайда
+    slidesPerView: 'auto'
+})
+
+// ! Swiper Producer
+// инициилизируем слайдер
+new Swiper('.producer__slider', {
+    navigation: {
+        nextEl: '.pr__btn-next',
+        prevEl: '.pr__btn-prev'
     },
 
     // клавиатура
