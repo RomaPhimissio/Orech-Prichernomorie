@@ -166,6 +166,26 @@ if (videoPlayGal) {
     })
 }
 
+
+// ! Swiper Product
+// инициилизируем слайдер
+new Swiper('.product__img-wrap-main', {
+    navigation: {
+        nextEl: '.product__btn-right',
+        prevEl: '.product__btn-left'
+    },
+
+    // клавиатура
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true
+    },
+
+    // ширина слайда
+    slidesPerView: 'auto'
+})
+
 // ! Swiper News
 // инициилизируем слайдер
 new Swiper('.news__list-container', {

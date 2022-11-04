@@ -53,13 +53,14 @@
 }
 
 .contacts__block-cont::before {
-    content: "\e90c";
+    content: "";
     position: absolute;
-    font-family: icons;
+    background: url("../img/tel-cont.svg") no-repeat center;
     left: 3px;
     top: 13px;
     color: rgba(51, 125, 90, 1);
-    font-size: 14px;
+    width: 14px;
+    height: 14px;
 }
 
 .contacts__block-tel {
@@ -129,13 +130,14 @@
 }
 
 .contacts__mail::before {
-    content: "\e903";
+    content: "";
     position: absolute;
-    font-family: icons;
+    background: url("../img/email.svg") no-repeat center;
     left: 3px;
     color: rgba(51, 125, 90, 1);
-    font-size: 15px;
     top: 3px;
+    width: 15px;
+    height: 15px;
 }
 
 .contacts__mail-link {
@@ -161,17 +163,21 @@
 }
 
 .contacts__list-add-block::before {
-    content: "\e906";
-    font-family: icons;
+    content: "";
     position: absolute;
+    background: url("../img/house.svg") no-repeat center;
     color: rgba(51, 125, 90, 1);
     left: -30px;
+    width: 16px;
+    height: 16px;
 }
 
 .contacts__list-add-block:nth-child(2)::before {
-    content: "\e910";
-    font-size: 19px;
+    content: "";
+    background: url("../img/tree.svg") no-repeat center;
     top: -2px;
+    width: 16px;
+    height: 19px;
 }
 
 .contacts__term {

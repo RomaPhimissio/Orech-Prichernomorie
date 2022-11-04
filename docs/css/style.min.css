@@ -1005,6 +1005,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .product__loop-wrap {
   position: relative;
@@ -1049,12 +1050,19 @@ img {
   transform: translate(0, 386%);
   left: 10px;
   cursor: pointer;
+  z-index: 3;
 }
 .product__btn:nth-of-type(2) {
   background: url("../img/right-arrow.svg") no-repeat center;
   background-size: 23px 23px;
   right: 12px;
   left: auto;
+}
+.product__img-wrap-main {
+  overflow: hidden;
+}
+.product__img-wrap-swipe {
+  display: flex;
 }
 .product__img-wrap {
   display: flex;
@@ -1065,6 +1073,16 @@ img {
 .product__img-wrap img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.swiper-slide {
+  width: auto;
+}
+.product__picture {
+  width: 100%;
+}
+.product__picture picture {
+  display: flex;
+  justify-content: center;
 }
 .product__item:nth-child(2) .product__img-wrap {
   padding-left: 3px;
@@ -2180,13 +2198,14 @@ img {
   padding-right: 4px;
 }
 .contacts__block-cont::before {
-  content: "\e90c";
+  content: "";
   position: absolute;
-  font-family: icons;
+  background: url("../img/tel-cont.svg") no-repeat center;
   left: 3px;
   top: 13px;
   color: #337d5a;
-  font-size: 14px;
+  width: 14px;
+  height: 14px;
 }
 .contacts__block-tel {
   display: flex;
@@ -2243,13 +2262,14 @@ img {
   position: relative;
 }
 .contacts__mail::before {
-  content: "\e903";
+  content: "";
   position: absolute;
-  font-family: icons;
+  background: url("../img/email.svg") no-repeat center;
   left: 3px;
   color: #337d5a;
-  font-size: 15px;
   top: 3px;
+  width: 15px;
+  height: 15px;
 }
 .contacts__mail-link {
   font-size: 14px;
@@ -2268,16 +2288,20 @@ img {
   margin-bottom: 16px;
 }
 .contacts__list-add-block::before {
-  content: "\e906";
-  font-family: icons;
+  content: "";
   position: absolute;
+  background: url("../img/house.svg") no-repeat center;
   color: #337d5a;
   left: -30px;
+  width: 16px;
+  height: 16px;
 }
 .contacts__list-add-block:nth-child(2)::before {
-  content: "\e910";
-  font-size: 19px;
+  content: "";
+  background: url("../img/tree.svg") no-repeat center;
   top: -2px;
+  width: 16px;
+  height: 19px;
 }
 .contacts__term {
   font-family: "Raleway", "Arial", "sans-serif";
