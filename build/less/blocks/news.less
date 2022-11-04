@@ -7,12 +7,12 @@
 .news.active {
     .news__item:nth-child(2) {
         img {
-            opacity: 0;
+            display: none;
             transition: all 0.3s ease 0s;
         }
 
         .link-play {
-            opacity: 0;
+            display: none;
             transition: all 0.3s ease 0s;
         }
     }
@@ -63,6 +63,14 @@
 
 .news__btn-wrap {
     position: initial;
+}
+
+.news__btn-prev {
+    background: rgba(51, 125, 90, 1) url("../img/producer-left.svg") no-repeat center;
+}
+
+.news__btn-next {
+    background: rgba(51, 125, 90, 1) url("../img/producer-right.svg") no-repeat center;
 }
 
 .news__list-container {
@@ -214,12 +222,13 @@
 }
 
 .news__link::before {
-    content: "\e900";
+    content: "";
     position: absolute;
-    font-family: "icons";
+    background: url("../img/rt-arrow.svg") no-repeat center;
     right: 0;
     color: rgba(26, 47, 63, 1);
-    font-size: 18px;
+    width: 18px;
+    height: 18px;
     top: 1px;
 }
 

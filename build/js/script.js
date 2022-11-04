@@ -92,11 +92,12 @@ if (videoPlayTask) {
     const task = document.querySelector('.task');
     videoPlayTask.addEventListener("click", function (e) {
         task.classList.add('active');
-        videoMovieTask.play();
-        videoMovieTask.addEventListener("ended", function () {
-            videoMovieTask.load()
-            task.classList.remove('active');
-        })
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                videoMovieTask.requestFullscreen();
+            }
+        }
+        videoMovieTask.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
 
@@ -108,11 +109,12 @@ if (videoPlayNews) {
     const news = document.querySelector('.news');
     videoPlayNews.addEventListener("click", function (e) {
         news.classList.add('active');
-        videoMovieNews.play();
-        videoMovieNews.addEventListener("ended", function () {
-            videoMovieNews.load()
-            news.classList.remove('active');
-        })
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                videoMovieNews.requestFullscreen();
+            }
+        }
+        videoMovieNews.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
 
