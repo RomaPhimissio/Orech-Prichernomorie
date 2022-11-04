@@ -83,8 +83,8 @@
 }
 
 .news__list {
-    gap: 1.95em;
-    padding: 0 2px;
+    display: flex;
+    gap: 20px;
 }
 
 .news__item {
@@ -97,6 +97,7 @@
 
 .swiper-slide {
     max-width: 410px;
+    width: auto;
 }
 
 .swiper-button-lock {
@@ -259,6 +260,10 @@
 
 .news-link-color-mode {
     color: rgba(51, 125, 90, 1);
+}
+
+.swiper-wrapper {
+    box-sizing: border-box;
 }
 
 @media (max-width: 767px) {

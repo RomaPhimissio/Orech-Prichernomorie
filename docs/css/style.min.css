@@ -1972,8 +1972,8 @@ img {
   margin-bottom: 28px;
 }
 .news__list {
-  gap: 1.95em;
-  padding: 0 2px;
+  display: flex;
+  gap: 20px;
 }
 .news__item {
   background-color: #ffffff;
@@ -1984,6 +1984,7 @@ img {
 }
 .swiper-slide {
   max-width: 410px;
+  width: auto;
 }
 .swiper-button-lock {
   display: block !important;
@@ -2122,6 +2123,9 @@ img {
 }
 .news-link-color-mode {
   color: #337d5a;
+}
+.swiper-wrapper {
+  box-sizing: border-box;
 }
 @media (max-width: 767px) {
   .news__list-container .swiper-wrapper {

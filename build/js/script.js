@@ -166,12 +166,12 @@ if (videoPlayGal) {
     })
 }
 
-// ! Swiper
+// ! Swiper News
 // инициилизируем слайдер
 new Swiper('.news__list-container', {
     navigation: {
-        nextEl: '.prod__btn-next',
-        prevEl: '.prod__btn-prev'
+        nextEl: '.news__btn-next',
+        prevEl: '.news__btn-prev'
     },
 
     // клавиатура
@@ -182,7 +182,8 @@ new Swiper('.news__list-container', {
     },
 
     // ширина слайда
-    slidesPerView: 'auto'
+    slidesPerView: 'auto',
+    spaceBetween: 32
 })
 
 // ! Swiper Producer
