@@ -24,6 +24,7 @@ if (videoPlayShow) {
         if (window.innerWidth < 768) {
             if (document.fullscreenEnabled) {
                 videoMovie.requestFullscreen();
+                videoMovie.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
             }
         }
         videoMovie.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
