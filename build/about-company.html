@@ -14,7 +14,26 @@
   @@include('components/structure/header.html')
   <main class="page-main">
     <h1 class="visually-hidden">Орех Причерноморья</h1>
-
+    <section class="showing-about">
+      <div class="showing-about__container">
+        <div class="showing-about__wrap">
+          <div class="showing-about__block-link">
+            <a class="showing-about__link" href="index.html">Главная</a>
+            <a class="showing-about__link" href="about-company.html">О производстве</a>
+          </div>
+          <div class="showing-about__content">
+            @@include('components/base/showing-title-text.html')
+            <a href="#" class="showing-about__link-play link-play" onclick="return false"></a>
+          </div>
+          <div class="showing-about__block">
+          </div>
+          <iframe class="showing-about__video" src="https://www.youtube.com/embed/_HyXo1CjmXk"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
 
 
     @@include('components/structure/stats.html', {
