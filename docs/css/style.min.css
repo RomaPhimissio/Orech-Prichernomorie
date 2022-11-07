@@ -953,7 +953,7 @@ img {
 }
 .product__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1em;
   row-gap: 3.1em;
   justify-content: center;
@@ -1319,7 +1319,7 @@ img {
 }
 @media (max-width: 767px) {
   .product__text {
-    width: 71%;
+    width: 90%;
   }
 }
 .producer {
@@ -1483,6 +1483,7 @@ img {
   .producer__wrap {
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 20px;
   }
   .producer__content {
     display: flex;
@@ -1739,7 +1740,7 @@ img {
 }
 .benefit__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
   width: 100%;
   padding: 0 2.8%;
@@ -1843,7 +1844,7 @@ img {
 }
 @media (max-width: 767px) {
   .benefit__title {
-    font-size: 35px;
+    font-size: 32px;
   }
   .benefit__text {
     width: 85%;
