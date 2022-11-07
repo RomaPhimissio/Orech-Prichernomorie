@@ -92,6 +92,18 @@
     }
 }
 
+.news-main__gal-item-wrap.active {
+    img {
+        display: none;
+        transition: all 0.5s ease 0s;
+    }
+
+    .link-play,
+    .gallery__content {
+        display: none;
+    }
+}
+
 .gallery__item:nth-child(1) {
     grid-column: span 7;
     width: 99.9%;
@@ -106,7 +118,8 @@
     }
 }
 
-.gallery__item:nth-child(3) {
+.gallery__item:nth-child(3),
+.gallery__item-third {
     grid-column: span 12;
     width: 100%;
 
@@ -236,25 +249,25 @@
 
 .gallery__item-movie-main.active {
     .gallery__pic-wrap {
-        opacity: 0;
+        display: none;
         transition: all 0.5s ease 0s;
     }
 
     .link-play,
     .gallery__content {
-        opacity: 0;
+        display: none;
     }
 }
 
 .gallery__item-movie.active {
-    .gallery__pic-wrap {
-        opacity: 0;
+    img {
+        display: none;
         transition: all 0.5s ease 0s;
     }
 
     .link-play,
     .gallery__content {
-        opacity: 0;
+        display: none;
     }
 }
 

@@ -18,7 +18,7 @@
       <div class="news-main__container">
         <div class="news-main__wrap">
           <div class="news-main__block-link">
-            <a href="#" class="news-main__link">Главная</a>
+            <a href="index.html" class="news-main__link">Главная</a>
             <a href="#" class="news-main__link">Новости и статьи</a>
           </div>
           <h2 class="news-main__title">Новости и статьи</h2>
@@ -40,7 +40,7 @@
                 в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность
                 зарабатывать десятки тысяч долларов в год всего <br>
                 на нескольких гектарах земли.</p>
-              <a href="#" class="news-main__link-read">Читать</a>
+              <a href="news-one.html" class="news-main__link-read">Читать</a>
             </div>
           </div>
           <div class="news-main__slider-wrap">
@@ -49,9 +49,25 @@
             })
           </div>
           <div class="news-main__gal-item-wrap">
-            @@include('components/base/gal-item.html', {
-            'classitem': 'gallery__item-news-main'
-            })
+            <div class="gallery__item gallery__item-third">
+              <div class="gallery__pic-wrap">
+                <picture>
+                  <source type='image/webp' srcset='img/gal3.webp'>
+                  <img src="img/gal3.jpg" alt="picture">
+                </picture>
+              </div>
+              <div class="gallery__content">
+                <a href="#" class="link-play gallery__link-play-third" onclick="return false"></a>
+                <p class="gallery__subtitle">Проект UBHDP</p>
+                <p class="gallery__text">Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и
+                  проекту UBHDP за возможность получить консультацию <br>
+                  от мировых специалистов!</p>
+              </div>
+              <iframe class="gallery__video gallery__video-third" src="https://www.youtube.com/embed/_HyXo1CjmXk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
           </div>
           <div class="news-main__main-link-wrap">
             <a href="#" class="news-main__main-link button-style">Посмотреть еще</a>

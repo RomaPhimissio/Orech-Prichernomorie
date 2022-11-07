@@ -38,12 +38,12 @@ if (videoPlayShowAbout) {
     const showIngAbout = document.querySelector('.showing-about');
     videoPlayShowAbout.addEventListener('click', function (e) {
         showIngAbout.classList.add('active');
-        videoMovieAbout.play();
-        videoMovieAbout.addEventListener('ended', function () {
-            videoMovieAbout.load()
-            showIngAbout.classList.remove('active');
-        })
-
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                videoMovieAbout.requestFullscreen();
+            }
+        }
+        videoMovieAbout.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
 
@@ -120,17 +120,18 @@ if (videoPlayNews) {
 
 // ! VideoNewsSecond
 const videoPlayNewsMain = document.querySelector('.news__link-play');
-const videoMovieNewsMain = document.querySelector('.news__video');
+const videoMovieArticle = document.querySelector('.news__video-article');
 
-if (videoPlayNews) {
+if (videoPlayNewsMain) {
     const newsMain = document.querySelector('.news-main');
-    videoPlayNews.addEventListener("click", function (e) {
+    videoPlayNewsMain.addEventListener("click", function (e) {
         newsMain.classList.add('active');
-        videoMovieNews.play();
-        videoMovieNews.addEventListener("ended", function () {
-            videoMovieNews.load()
-            newsMain.classList.remove('active');
-        })
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                videoMovieArticle.requestFullscreen();
+            }
+        }
+        videoMovieArticle.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
 
@@ -142,11 +143,12 @@ if (videoPlayGalmain) {
     const galMain = document.querySelector('.gallery__item-movie-main');
     videoPlayGalmain.addEventListener("click", function (e) {
         galMain.classList.add('active');
-        videoMovieGalmain.play();
-        videoMovieGalmain.addEventListener("ended", function () {
-            videoMovieGalmain.load()
-            galMain.classList.remove('active');
-        })
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                videoMovieGalmain.requestFullscreen();
+            }
+        }
+        videoMovieGalmain.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
 
@@ -158,13 +160,47 @@ if (videoPlayGal) {
     const gal = document.querySelector('.gallery__item-movie');
     videoPlayGal.addEventListener("click", function (e) {
         gal.classList.add('active');
-        videoMovieGal.play();
-        videoMovieGal.addEventListener("ended", function () {
-            videoMovieGal.load()
-            gal.classList.remove('active');
-        })
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                videoMovieGal.requestFullscreen();
+            }
+        }
+        videoMovieGal.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
     })
 }
+
+// ! VideoGalleryThird
+const videoPlayGalThird = document.querySelector('.gallery__link-play-third');
+const videoMovieGalThird = document.querySelector('.gallery__video-third');
+
+if (videoPlayGalThird) {
+    const galThird = document.querySelector('.news-main__gal-item-wrap');
+    videoPlayGalThird.addEventListener("click", function (e) {
+        galThird.classList.add('active');
+        if (window.innerWidth < 768) {
+            if (document.fullscreenEnabled) {
+                videoMovieGalThird.requestFullscreen();
+            }
+        }
+        videoMovieGalThird.setAttribute("src", `${srcGlobalVideo}?rel=0&autoplay=1`);
+    })
+}
+
+// ! Primary Example Video
+// const videoPlayGal = document.querySelector('.gallery__link-play-second');
+// const videoMovieGal = document.querySelector('.gallery__video-second');
+
+// if (videoPlayGal) {
+//     const gal = document.querySelector('.gallery__item-movie');
+//     videoPlayGal.addEventListener("click", function (e) {
+//         gal.classList.add('active');
+//         videoMovieGal.play();
+//         videoMovieGal.addEventListener("ended", function () {
+//             videoMovieGal.load()
+//             gal.classList.remove('active');
+//         })
+//     })
+// }
 
 
 // ! Swiper Product

@@ -3,13 +3,12 @@
 }
 
 .showing-about.active {
-    .showing-about__block {
-        opacity: 0;
-        transition: all 0.5s ease 0s;
-    }
 
-    .link-play {
-        opacity: 0;
+    .showing-about__block,
+    .showing-about__block-link,
+    .showing-about__content {
+        display: none;
+        transition: all 0.5s ease 0s;
     }
 }
 
@@ -30,13 +29,15 @@
 }
 
 .showing-about__link:first-child::after {
-    content: "\e900";
+    content: "";
     position: absolute;
-    font-family: icons;
+    background: url("../img/rt-arr.svg") no-repeat center;
     right: -21px;
     top: 0;
     bottom: 0;
     margin: auto 0;
+    width: 12px;
+    height: 12px;
 }
 
 .showing-about__content {

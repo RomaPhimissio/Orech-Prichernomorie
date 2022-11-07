@@ -36,9 +36,11 @@
 }
 
 .news-page__link:first-child::after {
-    content: "\e900";
+    content: "";
     position: absolute;
-    font-family: icons;
+    background: url("../img/rt-arrow.svg") no-repeat center;
+    width: 18px;
+    height: 18px;
     right: -22px;
 }
 
@@ -266,15 +268,12 @@
 }
 
 .sidebar__link::after {
-    content: "\e900";
+    content: "";
     position: absolute;
-    font-family: icons;
+    background: url("../img/rt-arrow.svg") no-repeat center;
     right: 0;
-    font-size: 17px;
-}
-
-.sidebar__link--mode {
-    color: rgba(51, 125, 90, 1);
+    width: 18px;
+    height: 18px;
 }
 
 .sidebar__block {
@@ -328,28 +327,31 @@
 }
 
 .sidebar__soclink::after {
-    content: "\e904";
+    content: "";
     position: absolute;
-    font-family: icons;
-    color: rgba(239, 239, 239, 1);
-    font-size: 14px;
+    background: url("../img/facebook-page.svg") no-repeat center;
+    width: 13px;
+    height: 13px;
 }
 
 .sidebar__socitem:nth-child(2) {
 
     .sidebar__soclink::after {
-        content: "\e907";
+        content: "";
         position: absolute;
-        font-family: icons;
+        background: url("../img/instagram-page.svg") no-repeat center;
+        width: 13px;
+        height: 13px;
     }
 }
 
 .sidebar__socitem:nth-child(3) {
     .sidebar__soclink::after {
-        content: "\e912";
+        content: "";
         position: absolute;
-        font-family: icons;
-        font-size: 15px;
+        background: url("../img/youtube-page.svg") no-repeat center;
+        width: 16px;
+        height: 16px;
     }
 }
 
