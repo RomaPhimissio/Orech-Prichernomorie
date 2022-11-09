@@ -41,6 +41,10 @@
     row-gap: 3.1em;
     justify-content: center;
     width: 100%;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
 }
 
 .product__item {
