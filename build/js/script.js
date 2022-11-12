@@ -239,7 +239,7 @@ new Swiper('.news__list-container', {
 
     // ширина слайда
     slidesPerView: 'auto',
-    spaceBetween: 32
+    spaceBetween: 20
 })
 
 // ! Swiper Producer

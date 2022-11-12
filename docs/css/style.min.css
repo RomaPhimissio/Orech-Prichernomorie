@@ -2009,18 +2009,14 @@ img {
 }
 .news__list {
   display: flex;
-  gap: 20px;
+}
+.news__list .swiper-slide {
+  max-width: 410px;
+  width: auto;
 }
 .news__item {
   background-color: #ffffff;
-  max-width: 410px;
-  width: 100%;
-  margin-right: 0 !important;
   padding-bottom: 28px;
-}
-.swiper-slide {
-  max-width: 410px;
-  width: auto;
 }
 .swiper-button-lock {
   display: block !important;
